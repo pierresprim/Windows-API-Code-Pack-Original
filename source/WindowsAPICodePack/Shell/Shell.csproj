@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -12,14 +12,11 @@
     <AssemblyName>Microsoft.WindowsAPICodePack.Shell</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    
-    
-    
-    
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <UpgradeBackupLocation />
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -272,11 +269,6 @@
     <Compile Include="PropertySystem\StronglyTypedProperties.cs" />
     <Compile Include="PropertySystem\SystemProperties.cs" />
     <Compile Include="PropertySystem\WindowProperties.cs" />
-    <Compile Include="Resources\LocalizedMessages.Designer.cs">
-      <DependentUpon>LocalizedMessages.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="ShellObjectWatcher\ChangeNotifyEventManager.cs" />
     <Compile Include="ShellObjectWatcher\ChangeNotifyLock.cs" />
     <Compile Include="ShellObjectWatcher\MessageListener.cs" />
@@ -374,7 +366,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalizedMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>LocalizedMessages.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
